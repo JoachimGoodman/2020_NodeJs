@@ -33,3 +33,37 @@ var avg = (one + two + three) / 3
 console.log(avg.toFixed(5))
 
 // --------------------------------------
+// --------------------------------------
+// Exercise 6 - Get the character by index
+
+var letters = "abc"
+// Get me the character "c"
+
+var char = letters.charAt(2)
+var char = letters[2]
+
+console.log(char)
+
+// --------------------------------------
+// Exercise 7 - Replace
+
+var fact = "You are learning javascript!"
+
+// capitalize the J in Javascript
+
+var result = ""
+for(i = 0; i < fact.length; i++) {
+    if(fact[i] === "j") {
+        result += fact[i].toUpperCase()
+    } else {
+        result += fact[i]
+    }
+}
+
+console.log(result)
+console.log(fact.replace("javascript", "Javascript"))
+
+// --------------------------------------
+
+// this is an object
+var computer = {}

@@ -1,0 +1,8 @@
+{    
+    "brand": "HUAWEI", 
+    "productAge": 2,
+    "keyboardKeys": ["q", "w", "e"],
+    "something": {
+        "newKey": "value"
+    }
+}
