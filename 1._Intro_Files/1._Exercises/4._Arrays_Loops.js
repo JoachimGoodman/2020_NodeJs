@@ -77,6 +77,8 @@ var dinnerTray = diet // ?
 
 var dinnerTray = diet.slice() // ?
 
+var dinnerTray = [...diet] // spread operator
+
 console.log("dinnerTray: ", dinnerTray)
 
 // --------------------------------------
@@ -89,7 +91,7 @@ var letters = ["a","b","c", "d", "e", "f", "g", "h"];
 
 // log every second char in the array starting from b
 
-for(i = 1; i < letters.length; i+=2) {
+for(var i = 1; i < letters.length; i += 2) {
     console.log(letters[i])
 } 
 
