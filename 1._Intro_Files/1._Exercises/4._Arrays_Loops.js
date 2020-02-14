@@ -60,15 +60,6 @@ console.log("\n-----------------Exercise 5 -----------------")
 // You don't like kale at all. Remove the LAST element of the array.
 // Don't remove by index. You know in advance that it's the last in the array because you are too full already. 
 
-// for(i = 0; i < diet.length; i++) {
-//     if(diet[i] === "kale") {
-//         diet.splice(i, 1)
-//     }
-// }
-
-// var kaleIndex = indexOf("kale")
-// diet.splice(kaleIndex, 1)
-
 diet.pop()
 
 console.log(diet)
@@ -84,6 +75,8 @@ var dinnerTray = diet.copyWithin() // ?
 
 var dinnerTray = diet // ?
 
+var dinnerTray = diet.slice() // ?
+
 console.log("dinnerTray: ", dinnerTray)
 
 // --------------------------------------
@@ -96,7 +89,7 @@ var letters = ["a","b","c", "d", "e", "f", "g", "h"];
 
 // log every second char in the array starting from b
 
-for(i = 0; i < letters.length; i+=2) {
+for(i = 1; i < letters.length; i+=2) {
     console.log(letters[i])
 } 
 
@@ -112,7 +105,7 @@ var discardedNumbers = [];
 // else push them to the array discardedNumbers
 
 for(i = 0; i < numbers.length; i++) {
-    if(numbers[i] >= 6 || numbers[i] <= 0) {
+    if(numbers[i] > 6 || numbers[i] < 0) {
         console.log(numbers[i])
     } else {
         discardedNumbers.push(numbers[i])
