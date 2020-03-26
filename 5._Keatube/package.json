@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "name": "keatube",
+  "version": "1.0.0",
+  "description": "A video site called Keatube",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "video",
+    "videos",
+    "tube",
+    "keatube",
+    "kea",
+    "site",
+    "videosite"
+  ],
+  "author": "Joachim Goodman",
+  "license": "ISC"
+}
