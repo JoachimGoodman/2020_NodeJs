@@ -1,0 +1,246 @@
+{
+    "javascript": {
+        "subsites": [
+            {
+                "title": "Console",
+                "description": "Let us first start off with some simple Javascript. To print out something in\n                        the console we use <span class=\"code\">console.log()</span>. Mostly used for testing when\n                        developing applications.",
+                "code": [
+                    {
+                        "title": "",
+                        "text": "",
+                        "example": "console.log()"
+                    }
+                ]
+            },
+            {
+                "title": "Variables",
+                "description": "We have multiple ways of storing elements. There is 3 different ways we can do it. \n <br><span class=\"code\">var</span> is a global variable when it is outside a function. This isn't used much anymore.\n <br><span class=\"code\">let</span> is considered an improved version of <span class=\"code\">var</span>, because\n it fixes a scoping issue. <span class=\"code\">let</span> can only be used inside a scope\n                        defined with <span class=\"code\">{ }</span>. <br>\n <span class=\"code\">const</span> variables declared with this maintain its constant value. Like <span class=\"code\">let</span>\n it can only be used inside the scope defined with <span class=\"code\">{ }</span>. <br>",
+                "code": [
+                    {
+                        "title": "",
+                        "text": "",
+                        "example": "var global = 1 <br>\n  let scoped = \"string\" <br>\n const constant = 1.0 <br>"
+                    }
+                ]
+            },
+            {
+                "title": "Loops",
+                "description": "We have a few ways we can loop in javascript. <br> <span class=\"code\">for</span> - loops a number of times. <br>\n                        <span class=\"code\">for/in</span> - loops through the properties of an object. Similar to a foreach loop in other languages. <br>\n                        <span class=\"code\">for/of</span> - loops through the values of an iterable object such as array, string or maps. <br>\n                        <span class=\"code\">while</span> - loops until it is stopped by making the condition false. <br>\n                        <span class=\"code\">do/while</span> - loops through the code first and after checks if the condition is true.<br>\n                    ",
+                "code": [
+                    {
+                        "title": "Example 1 - for loop",
+                        "text": "This for loop as 3 parameters. The first determine what index it starts at. In this case it is 10. The next\none decides how many times the loop should run. In this case it is 10. The last determine how much it should increment\nwith. In this case it is +1 every loop.",
+                        "example": "for (i = 0; i < 10; i++) { <br>\n&nbsp; // execute something. <br>\n}"
+                    },
+                    {
+                        "title": "Example 2 - for/in loop",
+                        "text": "for/in loop, loops through an object.",
+                        "example": "let object = { \"fruit\": \"avocado\", \"age\": 3 } <br> <br>\nfor (x in object) { <br>\n&nbsp; variable += object[x] <br>\n}"
+                    },
+                    {
+                        "title": "Example 3 - for/of loop",
+                        "text": "for/out loops through an iterable object like strings, arrays etc.",
+                        "example": "let array = [ 'orange', 'avocado', 'apple' ] <br> <br>\nfor (x in something) { <br>\n&nbsp; variable += something[x] <br>\n}"
+                    },
+                    {
+                        "title": "Example 4 - while loop",
+                        "text": "This loops until it is told to stop.",
+                        "example": "while (fruit == \"green\") { <br>\n&nbsp; // execute something <br>\n}"
+                    },
+                    {
+                        "title": "Eksample 5 - do/while loop",
+                        "text": "This loops once first and after check if it can loop again.",
+                        "example": "do { <br>\n&nbsp; // execute something <br>\n} <br>\nwhile (fruitAge > 3)"
+                    }
+                ]
+            },
+            {
+                "title": "Functions",
+                "description": "There is two different ways of writing a function in javascript. <br>\nStandard fucntion: <span class=\"code\">function(){ }</span> <br>\nArrow function: <span class=\"code\">() => { }</span> <br>\nFunctions are designed to do a specific task. You can call the function and make it do the task for you. Arrow functions allow us to write fast and\nbetter syntax functions.",
+                "code": [
+                    {
+                        "title": "Standard function",
+                        "text": "",
+                        "example": "function fruitMaker(fruit) { <br>\n&nbsp; // do some magic with fruit  <br>\n}"
+                    },
+                    {
+                        "title": "Arrow function",
+                        "text": "",
+                        "example": "fruitMaker = (fruit) => { <br>\n&nbsp; // do some magic with fruit  <br>\n}"
+                    }
+                ]
+            },
+            {
+                "title": "Collections",
+                "description": "<h4>Array</h4><p>Arrays in javascript is the same as most other languages. It is made by <span class=\"code\">fruitArray = []</span>. <br>\n<span class=\"code\">fruitArray[0]</span> - This is how you get a specific index. <br>\n<span class=\"code\">fruitArray.indexOf(\"a\")</span> - This gives the index of the first a in the array. <br> <br>\nYou can add to an array in many ways. <br>\n<span class=\"code\">fruitArray.push(\"Apple\")</span> <br>\n<span class=\"code\">fruitArray.splice()</span> - This makes it so you can add to the middle of an array <br>\nThere's also <span class=\"code\">.push()</span> and <span class=\"code\">.pop()</span> <br>\nIf you wanna make an copy of an array you use <span class=\"code\">.splice()</span>. Do not do this <span class=\"code\">fruitArray = fruitBox</span>,\nbecause this will make a reference to the array instead of copying it.",
+                "code": ""
+            }
+        ]
+    },
+    "json": {
+        "subsites": [
+            {
+                "title": "Basics",
+                "description": "JSON is used for storing data. It is easy to read and write for both humans and machines and makes it therefore a super strong tool. It is super language independent and can therefore be used in any programming language. <br>JSON is a collection of name/value pairs and is therefore considered an object. You define it by using curly brackets <span class=\"code\">{ }</span>. ",
+                "code": [
+                    {
+                        "title": "Simple JSON Example",
+                        "text": "",
+                        "example": "{<br>&nbsp;&nbsp;'key': 'value'<br>}"
+                    },
+                    {
+                        "title": "Add to JSON",
+                        "text": "You can add to JSON by doing following",
+                        "example": "json = jsonObject.newKey = true"
+                    },
+                    {
+                        "title": "Remove from JSON",
+                        "text": "To delete from JSON do following",
+                        "example": "delete jsonObject.newKey\n"
+                    },
+                    {
+                        "title": "Read from JSON",
+                        "text": "Get the JSON value by calling the key like following",
+                        "example": "jsonObject.key"
+                    }
+                ]
+            }
+        ]
+    },
+    "jquery": {
+        "subsites": [
+            {
+                "title": "Basics",
+                "description": "Jquery is a small javascript library which is designed to make some javascript tasks easier and faster to write. Jquery can help you with HTML document manipulation, event handling, animation and Ajax. <br>To use jquery you start off by using <span class='code'>$</span>. This signals to the jquery library that you are writing jquery.",
+                "code": [
+                    {
+                        "title": "Call html tag id or class",
+                        "text": "You can call an id or class by doing following.",
+                        "example": "$('#fruit') // for id<br>$('.fruits') // for class"
+                    },
+                    {
+                        "title": "Manipulate html and/or css",
+                        "text": "",
+                        "example": "// add css <br>\n$('#fruit').css('background-color', '#fff') <br><br>\n// add html <br>\n$('#fruit').html('< p >Orange< /p >') <br><br>\n// add just text<br>\n$('#fruit').text('fruit and vegetables')<br><br>\n// to hide (display none) <br>\n$('#fruit').hide() <br><br>\n// add/remove class <br>\n$('#fruit').addClass('fruit-box') <br>\n$('#fruit').removeClass('fruit-salat') <br>"
+                    }
+                ]
+            },            {
+                "title": "document.ready",
+                "description": "In jquery you write document.ready a little different from normal javascript.",
+                "code": [
+                    {
+                        "title": "",
+                        "text": "",
+                        "example": "$(document).ready(() => {<br>&nbsp;&nbsp;console.log('fruits')<br>})"
+                    }
+                ]
+            },
+            {
+                "title": "Event methods",
+                "description": "You can make a lot of different event listeners in jquery and jquery makes it easier to us to use them. There is a lot of different event methods we can use. Here is some of them. <br>    <span class=\"code\">.click()</span>, \n    <span class=\"code\">.dblclick()</span>,\n    <span class=\"code\">.mouseenter()</span>,\n    <span class=\"code\">.mouseleave()</span>, \n    <span class=\"code\">.mouseup()</span>, \n    <span class=\"code\">.mousedown()</span>,\n    <span class=\"code\">.hover()</span> etc.",
+                "code": [
+                    {
+                        "title": "",
+                        "text": "Here is a small example of how it can look",
+                        "example": "$(\"p\").click(() => {\n <br> &nbsp;&nbsp;// action goes here!!<br>\n});"
+                    }
+                ]
+            }
+        ]
+    },
+    "nodejs": {
+        "subsites": [
+            {
+                "title": "npm and npx",
+                "description": "",
+                "code": [
+                    {
+                        "title": "",
+                        "text": "",
+                        "example": ""
+                    }
+                ]
+            },
+            {
+                "title": "Basics",
+                "description": "Nodejs is an open source server environment. It is used to run javascript on servers.",
+                "code": [
+                    {
+                        "title": "Port Listener",
+                        "text": "To listen on a port do following. In this example we listen on port 3000, so we can access the site by going to http://localhost:3000.",
+                        "example": "const server = app.listen(3000, (error) => { <br>\n&nbsp;&nbsp;if (error){<br>\n&nbsp;&nbsp;&nbsp;&nbsp;console.log(error)<br>\n&nbsp;&nbsp;}<br>\n&nbsp;&nbsp;console.log(\"The Server is running at\", server.address().port)<br>\n})"
+                    },
+                    {
+                        "title": "Create a route",
+                        "text": "When people to to /search root on our website, we can do different things. We can send back an html site or JSON file. In this example we just send back empty json.",
+                        "example": "app.get(\"/search\", (req, res) => { <br>\n&nbsp;&nbsp;res.send({ }) <br>\n}) <br>"
+                    }
+                ]
+            },
+            {
+                "title": "Dependencies",
+                "description": "When making a nodejs server we can set some dependencies in our package.json file. When we add in it and we use npm install it will automatically install those packages too.",
+                "code": [
+                    {
+                        "title": "package.json",
+                        "text": "This is how a package.json file could look. Here we wanna get express and request",
+                        "example": "{<br>&nbsp;&nbsp;\"dependencies\": {\n<br>&nbsp;&nbsp;&nbsp;&nbsp;\"express\": \"4.17.1\",\n<br>&nbsp;&nbsp;&nbsp;&nbsp;\"request\": \"^2.88.2\",\n<br>&nbsp;&nbsp;}\n<br>}"
+                    },
+                    {
+                        "title": "Express",
+                        "text": "Express helps us make routes in our nodejs. To use express we start by calling it and it by using <span class='code'>const express = require('express')</span>. Now we can use the express method and work with it. <span class='code'>const app = express()</span>. We can now use <span class='code'>app</span> to make routes. <br><br>We also use it to get access to our html, image, css etc files. We do that by doing following and writing the folder inside (public).",
+                        "example": "app.use(express.static('public'))"
+                    },
+                    {
+                        "title": "Body-Parser",
+                        "text": "This packets is used to extract the entire body of an incoming request (HTTP POST).<br><a href=\"https://www.npmjs.com/package/body-parser\" target='_target'>body-parser link</a>",
+                        "example": ""
+                    },
+                    {
+                        "title": "Cross-Env",
+                        "text": "This is used to making multiple site environments. We can make an development and public build to separate those from each other. This means those different env run on different ports and it is also cross platform friendly. <br><a href=\"https://www.npmjs.com/package/cross-env\" target='_target'>cross-env link</a> ",
+                        "example": ""
+                    }
+                ]
+            },
+            {
+                "title": "Importing",
+                "description": "We import dependencies to use them. We do that by using <span class='code'>require()</span>.",
+                "code": [
+                    {
+                        "title": "",
+                        "text": "",
+                        "example": "const express = require('express')<br>const app = express()"
+                    }
+                ]
+            },
+            {
+                "title": "Request",
+                "description": "There's multiple ways of requests in nodejs. All of them is used for different purposes. <br><span class='code'>.get()</span> used to retrieve data. <br><span class='code'>.post()</span> is used for creating. <br><span class='code'>.delete()</span> is used for deleting. <br><span class='code'>.put()</span> is used to edit.",
+                "code": [
+                    {
+                        "title": "",
+                        "text": "",
+                        "example": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "terminal": {
+        "subsites": [
+            {
+                "title": "Commands",
+                "description": "<span class='code'>cd <path></span> is used to go to the folder you wanna work with.<br><span class='code'>cd ..</span> goes one folder backwards.<br><span class='code'>ls</span> lists all of the files and folders in current directory. <br><span class='code'>node <file name></span> used to run a js file with node.<br><span class='code'>nodemon <file name></span> is a special tool/script to run a node every time a change was made in the folder.<br><span class='code'>npm install</span> installs node_modules in the directory.<br>",
+                "code": [
+                    {
+                        "title": "",
+                        "text": "",
+                        "example": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
+

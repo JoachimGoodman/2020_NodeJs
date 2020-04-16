@@ -1,0 +1,59 @@
+header
+  transition: all 0.5s linear
+.navbar
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 3
+  top: 50px
+  left: 0
+  background-color: $scale-225
+  overflow-x: hidden
+  transition: 0.5s
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75)
+  a
+    padding: 10px 12px
+    text-decoration: none
+    font-size: 16px
+    color: #e1e1e1
+    display: block
+    transition: 0.15s
+    border-bottom: 1px solid $scale-200
+    &:hover
+      background: $scale-200
+.width
+  width: 300px
+.bg-black
+  position: fixed
+  z-index: 2
+  width: 100%
+  height: 100%
+  background: rgb(0,0,0, 0.5)
+
+.top-banner
+  position: fixed
+  z-index: 4
+  width: 100%
+  height: 50px
+  background: $scale-225
+  border-bottom: 1px solid $scale-200
+  .burger-menu
+    color: $white
+    width: 50px
+    text-align: center
+    cursor: pointer
+    float: left
+    i
+      line-height: 50px
+      font-size: 35px
+  h1
+    line-height: 50px
+    float: left
+    margin-left: 5px
+    padding: 0 5px
+    font-size: 18px
+    font-weight: 400
+    span
+      font-weight: 600
+  a
+    color: $white
