@@ -1,0 +1,17 @@
+.copyright {
+    font-size: 0.9em;
+}
+.logo {
+    max-width: 300px;
+}
+
+#main-content {
+    min-height: calc(100vh - 250px);
+}
+
+footer {
+    height: 20px;
+}
+#upload-link {
+    float: right;
+}

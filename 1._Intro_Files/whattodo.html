@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <h1>Bored?</h1>
+    <h2>Perhaps you could...</h2>
+    <p id="p"></p>
+    <button onclick="newTask()">test</button>
+    <script type="application/javascript">
+        console.log('hello world')
+
+        async function newTask() {
+            await fetch('https://www.boredapi.com/api/activity/')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.activity)
+                    document.getElementById('p').textContent = data.activity
+                })
+        }
+
+        newTask()
+
+    </script>
+</body>
+</html>

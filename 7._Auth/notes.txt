@@ -1,0 +1,17 @@
+ORM
+
+DDL - Define
+CREATE, DROP, ALTER
+
+DML - Manipulate
+SELECT, UPDATE, DELETE, INSERT
+
+Database migrations -> DDL
+Data migrations -> DML (and sometimes database structure, DDL)
+
+
+commands
+
+npm run migrate:rollback
+npm run migrate:make
+npm run migrate:latest

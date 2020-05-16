@@ -58,9 +58,6 @@ router.post("/videos", upload.single("uploadedVideo"), (req, res) => {
         tags: req.body.tags.split(/\s*[,\s]\s*/),
     };
 
-
-
-
     /* Validation */
     const titleMaxLength = 128; 
 

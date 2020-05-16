@@ -6,15 +6,23 @@ function validateForm() {
     const tags = document.forms.videoupload.tags.value;
     const category = document.forms.videoupload.category.value;
 
-    const titleMaxLength = 128; 
+    const titleMaxLength = 128;
+
+    const alert = (msg) => {
+        Swal.fire(
+            msg
+        )
+    }
 
     if (title.length === 0 || title.length > titleMaxLength) {
+        alert("Missing title")
         return false;
     }
     
     const descriptionMaxLength = 2048;
 
     if (description.length > descriptionMaxLength) {
+        alert("Description toooooooo big")
         return false;
     }
 
